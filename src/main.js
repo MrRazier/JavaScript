@@ -289,7 +289,7 @@ class LINE extends LineAPI {
             this._sendMessage(seq, 'Ok My Name Is Lemon');
        }
 	if(txt == 'lemon:help'){
-	this._sendMessage(seq, '============================\n[Lemon] Public Bot\nHelp Menu.\n============================\n\n➣Respon - Checking Bot response\n➣lemon:speed - Checking bot speed\n➣lemon:point - Create point for silent reader.\n➣lemon:view - view sider from the point.\n➣lemon:ginfo - Checking group info.\n➣lemon:creator - Creator lemon Bot.\n➣lemon:groupcreator - lemon send contact this group creator\n➣lemon:mentionall - mention all members.\n➣lemon @bye - lemon leave from group.\n➣lemon:gift - lemon will send gift.\n➣lemon:contactinfo - For showing contact info. \n➣lemon:invite - Invite someone into this group by send contact. \n\n============================\nAdd my creator http://line.me/ti/p/PXD0Yq35b2 (@�_�)/\n============================');
+	this._sendMessage(seq, '============================\n[Lemon] Public Bot\nHelp Menu.\n============================\n\nâ£Respon - Checking Bot response\nâ£lemon:speed - Checking bot speed\nâ£lemon:point - Create point for silent reader.\nâ£lemon:view - view sider from the point.\nâ£lemon:ginfo - Checking group info.\nâ£lemon:creator - Creator lemon Bot.\nâ£lemon:groupcreator - lemon send contact this group creator\nâ£lemon:mentionall - mention all members.\nâ£lemon @bye - lemon leave from group.\nâ£lemon:gift - lemon will send gift.\nâ£lemon:contactinfo - For showing contact info. \nâ£lemon:invite - Invite someone into this group by send contact. \n\n============================\nAdd my creator http://line.me/ti/p/PXD0Yq35b2 (@×_×)/\n============================');
 	}
         if(txt == 'admincheck') {
           if(isAdminOrBot(seq.from)) {
@@ -582,7 +582,7 @@ class LINE extends LineAPI {
             }
 	}
         if(txt == 'lemon @bye') {
-          let txt = await this._sendMessage(seq, 'Are you sure? �_�(yes/no)');
+          let txt = await this._sendMessage(seq, 'Are you sure? ×_×(yes/no)');
           this.leavegroup = 1
         }
         if(txt == 'yes' && this.leavegroup == 1){
@@ -600,7 +600,7 @@ class LINE extends LineAPI {
             this._sendMessage(seq,lyrics);
         }
 
-        if(cmd === '') {
+        if(cmd === 'ÂÂÂÂ') {
             exec(`curl ipinfo.io/${payload}`,(err, res) => {
                 const result = JSON.parse(res);
                 if(typeof result.error == 'undefined') {
